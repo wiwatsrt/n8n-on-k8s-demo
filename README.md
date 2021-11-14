@@ -14,3 +14,14 @@ Then run all config files:
 ```
 kubectl apply -f .
 ```
+
+Local run:
+```
+kubectl port-forward -n n8n svc/n8n-service 8000:80 &
+```
+
+open you browser
+
+```
+http://localhost:8000/
+```
